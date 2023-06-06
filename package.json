@@ -1,0 +1,19 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "build": "parcel build src/pages/index.hbs --no-cache --public-url ./",
+    "start": "parcel src/pages/**/*.hbs --no-cache && npm run mock-server",
+    "serve": "serve -s dist",
+    "mock-server": "node ./test/search.js"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.1",
+    "express": "^4.18.2",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "parcel-plugin-handlebars": "^0.4.4"
+  }
+}

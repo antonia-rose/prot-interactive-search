@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Title
+  </title>
+    <link rel="stylesheet" href="../../vendor/pl-styles.css" />
+    <link rel="stylesheet" href="../styles.scss" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../js/main-header.js"></script>
+
+</head>
+<body>
+  {{> header}}
+  {{{body}}}
+  {{> footer}}
+
+<script src="../lib/Imager.js"></script>
+<script src="../lib/cash.min.js"></script>
+<script src="../lib/glider-compat.min.js"></script>
+<script src="../lib/glider.min.js"></script>
+<script src="../lib/scrollIntoView.min.js"></script>
+<script src="../js/autosuggest.js"></script>
+<script src="../js/archive.js"></script>
+<script src="../js/book-teaser.js"></script>
+<script src="../js/journal-gallery.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/main-header.js"></script>
+<script src="../js/journal-header.js"></script>
+<script src="../js/journal-navbar.js"></script>
+<script>
+    new Imager('.a-responsive-image', { availableWidths: [200, 260, 320, 600], fileTypeReqFormat: 'as=$' });
+</script>
+</body>
+</html>
