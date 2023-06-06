@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "build": "parcel build src/pages/index.hbs --no-cache --public-url ./",
+    "build": "parcel build src/pages/index.hbs --no-cache --public-url ./ --no-minify",
     "start": "parcel src/pages/**/*.hbs --no-cache && npm run mock-server",
     "serve": "serve -s dist",
     "mock-server": "node ./test/search.js"
