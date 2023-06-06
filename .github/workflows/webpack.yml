@@ -1,5 +1,4 @@
 name: NodeJS with Webpack
-
 on:
   push:
     branches: [ "main" ]
@@ -26,6 +25,10 @@ jobs:
       run: |
         npm install
         npm run build
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./dist
   deploy:
     # Add a dependency to the build job
     needs: build
