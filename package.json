@@ -2,8 +2,8 @@
   "name": "my-project",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "build": "parcel build src/layouts/base.pug --no-cache --public-url ./",
-    "start": "parcel src/layouts/base.pug --no-cache & npm run mock-server",
+    "build": "parcel build src/pages/*.pug --no-cache --public-url ./",
+    "start": "parcel src/pages/*.pug --no-cache & npm run mock-server",
     "serve": "serve -s dist",
     "mock-server": "node ./test/search.js"
   },
