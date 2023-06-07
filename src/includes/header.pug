@@ -1,0 +1,36 @@
+div.a-layout-row.o-main-header__row
+    div.a-layout-content-block.o-main-header
+        div.o-main-header__dropdown-menu.o-main-header__dropdown-menu__main-menu-wrapper
+            button.o-main-header__dropdown-menu__button.o-main-header__main-menu-button(aria-label='Menu')
+                svg.a-icon(viewBox="0 0 24 24")
+                    rect(x="5", y="7", width="14", height="1", rx=".5")
+                    rect(x="5", y="11", width="14", height="1", rx=".5")
+                    rect(x="5", y="15", width="14", height="1", rx=".5")
+                span.o-main-header-menu-name Menü
+        div.o-main-header__logos.o-main-header__item
+            div.o-main-header__logo
+                a.a-brand.a-brand__primary(href="/")
+                    span springermedizin.de
+        div.o-main-header__search.o-main-header__dropdown-menu.o-main-header__dropdown-menu__search-menu-wrapper
+            button.o-main-header__dropdown-menu__button.o-main-header__search-menu-button
+                svg.a-icon(viewBox="0 0 24 24")
+                    path(d="M10.26 4.044a7.032 7.032 0 0 0-4.844 2.743 6.97 6.97 0 0 0-1.383 4.763c.085.975.276 1.676.685 2.51.721 1.471 1.815 2.553 3.302 3.264 2.303 1.102 5.133.82 7.156-.713l.236-.179 1.564 1.56c.86.858 1.622 1.589 1.692 1.624.313.156.75.025.921-.277a.787.787 0 0 0 .027-.671c-.035-.07-.766-.832-1.624-1.692l-1.56-1.564.179-.236c1.19-1.571 1.643-3.652 1.228-5.646-.275-1.328-1.056-2.712-2.046-3.628a7.032 7.032 0 0 0-5.533-1.858m1.914 1.072c2.407.51 4.177 2.279 4.713 4.71.126.571.126 1.777 0 2.348-.536 2.431-2.282 4.177-4.713 4.713-.571.126-1.777.126-2.348 0a6.434 6.434 0 0 1-1.479-.511c-1.682-.84-2.817-2.317-3.236-4.206-.125-.565-.125-1.775 0-2.34.572-2.582 2.55-4.428 5.132-4.789.431-.061 1.484-.019 1.931.075", fill-rule="evenodd")
+                span.o-main-header-menu-name Suche
+            div.o-main-header-menu__dropdown-content.o-main-header__dropdown-menu__search-content.o-main-header__search-menu
+                div.m-header-search-menu.a-layout-content-block
+                    div.m-header-search-menu__content
+                        div.a-search-box
+                            div.input-wrapper
+                                form.a-search-box__form
+                                    span.a-search-box__icon 
+                                        svg.a-icon(viewBox="0 0 24 24")
+                                            path(d="M10.26 4.044a7.032 7.032 0 0 0-4.844 2.743 6.97 6.97 0 0 0-1.383 4.763c.085.975.276 1.676.685 2.51.721 1.471 1.815 2.553 3.302 3.264 2.303 1.102 5.133.82 7.156-.713l.236-.179 1.564 1.56c.86.858 1.622 1.589 1.692 1.624.313.156.75.025.921-.277a.787.787 0 0 0 .027-.671c-.035-.07-.766-.832-1.624-1.692l-1.56-1.564.179-.236c1.19-1.571 1.643-3.652 1.228-5.646-.275-1.328-1.056-2.712-2.046-3.628a7.032 7.032 0 0 0-5.533-1.858m1.914 1.072c2.407.51 4.177 2.279 4.713 4.71.126.571.126 1.777 0 2.348-.536 2.431-2.282 4.177-4.713 4.713-.571.126-1.777.126-2.348 0a6.434 6.434 0 0 1-1.479-.511c-1.682-.84-2.817-2.317-3.236-4.206-.125-.565-.125-1.775 0-2.34.572-2.582 2.55-4.428 5.132-4.789.431-.061 1.484-.019 1.931.075", fill-rule="evenodd")
+                                    input.a-search-box__content(type="search", aria-label="Suche", placeholder="Suchbegriff eingeben")
+                                    input(type="hidden", name="searchType", value="StandadSearchType")
+                            div.autocomplete-wrapper
+        div.divider     
+        div.o-main-header__dropdown-menu.o-main-header__dropdown-menu__profile-menu-wrapper
+            button.o-main-header__dropdown-menu__button.o-main-header__profile-menu-button
+                svg.a-icon(viewBox="0 0 24 24")
+                    path(d="M15.5,15 C17.9852814,15 20,17.0147186 20,19.5 L20,21.5 C20,21.7761424 19.7761424,22 19.5,22 C19.2238576,22 19,21.7761424 19,21.5 L19,19.5 C19,17.5670034 17.4329966,16 15.5,16 L8.5,16 C6.56700338,16 5,17.5670034 5,19.5 L5,21.5 C5,21.7761424 4.77614237,22 4.5,22 C4.22385763,22 4,21.7761424 4,21.5 L4,19.5 C4,17.0147186 6.01471863,15 8.5,15 L15.5,15 Z M12,3 C9.51471863,3 7.5,5.01471863 7.5,7.5 C7.5,9.98528137 9.51471863,12 12,12 C14.4852814,12 16.5,9.98528137 16.5,7.5 C16.5,5.01471863 14.4852814,3 12,3 Z M12,4 C13.9329966,4 15.5,5.56700338 15.5,7.5 C15.5,9.43299662 13.9329966,11 12,11 C10.0670034,11 8.5,9.43299662 8.5,7.5 C8.5,5.56700338 10.0670034,4 12,4 Z")
+                span.o-main-header-menu-name Mein Profil

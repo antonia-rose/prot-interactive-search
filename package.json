@@ -1,17 +1,14 @@
 {
   "name": "my-project",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "types": "unrelated.js",
-  "targets": {
-    "types": false
-  },
   "scripts": {
-    "build": "parcel build src/pages/*.hbs --no-cache --no-minify --public-url ./",
-    "start": "parcel src/pages/*.hbs --no-cache && npm run mock-server",
+    "build": "parcel build src/layouts/base.pug --no-cache --public-url ./",
+    "start": "parcel src/layouts/base.pug --no-cache & npm run mock-server",
     "serve": "serve -s dist",
     "mock-server": "node ./test/search.js"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.9.1",
     "@parcel/transformer-sass": "^2.9.1",
     "express": "^4.18.2",
     "parcel": "latest"

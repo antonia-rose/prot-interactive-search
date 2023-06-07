@@ -2901,7 +2901,7 @@ a {
   font-size: 0.8rem;
   line-height: 1.1666666667em;
 }
-.m-text-field__container:focus-within .m-text-field__input:not([disabled]):placeholder, .m-text-field__container:active .m-text-field__input:not([disabled]):placeholder {
+.m-text-field__container:focus-within .m-text-field__input:not([disabled])::placeholder, .m-text-field__container:active .m-text-field__input:not([disabled])::placeholder {
   opacity: 0.3;
 }
 .m-text-field__input:focus:not(:-moz-placeholder-shown) + .m-text-field__label {
@@ -2940,7 +2940,7 @@ a {
 .m-text-field--disabled .m-text-field__input {
   opacity: 0.25;
 }
-.m-text-field--disabled .m-text-field__input:placeholder {
+.m-text-field--disabled .m-text-field__input::placeholder {
   opacity: 0;
 }
 .m-text-field--disabled .m-text-field__label {
@@ -3062,7 +3062,7 @@ a {
   border: none;
   box-shadow: none;
 }
-.m-textarea__container:focus-within .m-textarea__input:not([disabled]):placeholder, .m-textarea__container:active .m-textarea__input:not([disabled]):placeholder {
+.m-textarea__container:focus-within .m-textarea__input:not([disabled])::placeholder, .m-textarea__container:active .m-textarea__input:not([disabled])::placeholder {
   opacity: 0.3;
 }
 .m-textarea__input:focus:not(:-moz-placeholder-shown) + .m-textarea__label {
@@ -3921,16 +3921,11 @@ a {
 .m-journal-navbar__menu__dropdown-menu:hover, .m-journal-navbar__menu__dropdown-menu:focus {
   cursor: pointer;
 }
-.m-journal-navbar__menu__dropdown-menu:hover-button, .m-journal-navbar__menu__dropdown-menu:focus-button {
-  opacity: 1;
-  text-shadow: 0 0 0.65px #ffffff, 0 0 0.65px #ffffff;
-}
+
 .m-journal-navbar__menu__dropdown-menu:hover .active, .m-journal-navbar__menu__dropdown-menu:focus .active {
   font-weight: normal;
 }
-.m-journal-navbar__menu__dropdown-menu:hover-content, .m-journal-navbar__menu__dropdown-menu:focus-content {
-  font-weight: normal;
-}
+
 .m-journal-navbar__menu-item {
   opacity: 0.9;
   display: inline-block;
